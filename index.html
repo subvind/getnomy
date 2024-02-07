@@ -16,19 +16,44 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+  <style>
+    body {
+      background: #eee;
+    }
+  </style>
 </head>
 <body>
+  <header class="navbar-fixed">
+    <nav class="navbar white black-text">
+      <a href="https://getnomy.com" class="brand-logo center black-text">getnomy.com</a>
+    </nav>
+  </header>
+  <div class="container">
+    <p>
+      Deploy and manage our software:<br />
+      <a href="https://fullstacksilo.com">https://fullstacksilo.com</a>
+    </p>
+    <div class="card">
+      <div class="card-content">
+        <h4 style="margin: 0;">Featured Websites:</h4>
+        <ol>
+          <li><a href="https://istrav.getnomy.com">https://istrav.getnomy.com</a></li>
+          <li><a href="https://subvind.getnomy.com">https://subvind.getnomy.com</a></li>
+          <li><a href="https://underwind-solutions.getnomy.com">https://underwind-solutions.getnomy.com</a></li>
+        </ol>
+      </div>
+    </div>
 
-  <h1>nomy.GET</h1>
-  <p>
-    Deploy and manage our software at <a href="https://fullstacksilo.com">fullstacksilo.com</a>.
-  </p>
-  <h4>Featured Websites:</h4>
-  <ul>
-    <li><a href="https://istrav.getnomy.com">isTrav</a></li>
-    <li><a href="https://subvind.getnomy.com">subvind</a></li>
-    <li><a href="https://underwind-solutions.getnomy.com">underwind-solutions</a></li>
-  </ul>
+    <hr>
+    <div id="copyright">
+      <script>
+        document.getElementById('copyright').innerHTML = window.location.hostname + ' © ' + new Date().getFullYear();
+      </script>
+    </div>
+    <p style="margin: 0;">
+      powered by <a href="https://subvind.com">subvind</a>
+    </p>
+  </div>
   <!-- Include htmx -->
   <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.js"></script>
 </body>
